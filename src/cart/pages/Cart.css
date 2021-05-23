@@ -1,0 +1,30 @@
+.cart{
+  display: flex;
+  flex-flow: row;
+  padding-top: 30px;
+}
+
+.cart__list{
+  width: 50%;
+}
+
+.cart__form{
+  width: 50%;
+}
+
+.cart h4{
+  color: var(--main-green);
+}
+
+@media (max-width: 768px){
+  .cart{
+    flex-flow: column;
+  }
+  .cart__list{
+    width: 100%;
+  }
+  .cart__form{
+    padding-top: 30px;
+    width: 100%;
+  }
+}

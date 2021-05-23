@@ -1,0 +1,113 @@
+.create_sandwich{
+  display: flex;
+  flex-flow: row;
+}
+
+.create_sandwich__builder{
+  width: 70%;
+  padding-top: 30px;
+  margin-left: 10px;
+}
+
+.create_sandwich__helper{
+  margin-top: 30px;
+  width: 30%;
+}
+
+.create_sandwich__helper_content h4{
+  color: var(--main-green);
+}
+
+.create_sandwich__helper_content ul{
+  list-style: none;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  padding-left: 0;
+}
+
+.create_sandwich__helper_content ul li{
+  height: 50px;
+  border-bottom: 1px solid var(--light-gray);
+  display: table;
+  width: 100%;
+  cursor: pointer;
+}
+
+.create_sandwich__helper_content ul li:hover{
+  background: var(--main-yellow);
+  color: var(--white);
+}
+
+.create_sandwich__helper_content ul li span{
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+
+.create_sandwich__quantity button{
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.create_sandwich__quantity button:hover{
+  color: var(--main-yellow);
+}
+
+.create_sandwich__quantity span{
+  font-size: 20px;
+  color: var(--main-green);
+  cursor: default;
+}
+
+.create_sandwich__quantity button.disabled, .create_sandwich__quantity button.disabled:hover{
+  color: var(--light-gray);
+  cursor: default;
+}
+
+.create_sandwich__helper_mobile{
+  display: none;
+}
+
+.create_sandwich__modal_bar{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background: var(--white);
+  border-top: 1px solid var(--light-gray);
+  z-index: 101;
+}
+
+.create_sandwich__modal_bar img{
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.create_sandwich__modal_bar img.active{
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px){
+  .create_sandwich{
+    flex-flow: column;
+  }
+
+  .create_sandwich__builder{
+    width: calc(100% - 20px);
+    margin: 30px 10px;
+  }
+
+  .create_sandwich__helper{
+    display: none;
+  }
+
+  .create_sandwich__helper_mobile{
+    display: block;
+  }
+}

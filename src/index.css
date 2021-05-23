@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --white: #FFFFFF;
+  --main-green: #009743;
+  --main-yellow: #FFCB0A;
+  --light-gray: #DEDEDE;
+  --dark-gray: #353535;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+}
+
+
+main {
+  margin-top: 64px !important;
+}
+
+.slide-in-left-enter {
+  transform: translateX(-100%);
+}
+
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.slide-in-left-exit {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card{
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+
+.divider{
+  border-bottom: 1px solid var(--light-gray);
+  margin: 15px auto;
+}
+
+@media (max-width: 1000px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px){
+  .hide-on-mobile{
+    display: none;
+  }
+
+  .hide-on-desktop{
+    display: block;
+  }
+
+  .container{
+    max-width: 90vw;
+  }
+}
+
+@media (min-width: 769px){
+  .hide-on-mobile{
+    display: block;
+  }
+
+  .hide-on-desktop{
+    display: none;
+  }
 }

@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+main{
+  min-height: calc(100vh - 144px);
+}
+
+footer{
+  text-align: center;
+  padding: 15px;
+  background: var(--dark-gray);
+  margin: 30px auto 0;
+  height: 50px;
+  color: var(--light-gray);
+  font-size: 12px;
+}
+
+footer a{
+  color: var(--light-gray);
+  text-decoration: none;
+}

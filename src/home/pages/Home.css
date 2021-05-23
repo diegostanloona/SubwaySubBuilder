@@ -1,0 +1,24 @@
+.home__slider img.home__slider-img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.home__cards{
+  display: flex;
+  flex-flow: row;
+}
+
+.home__card-container{
+  width: 25%;
+}
+
+@media (max-width: 768px){
+  .home__cards{
+    flex-flow: column;
+  }
+
+  .home__card-container{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

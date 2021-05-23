@@ -1,0 +1,30 @@
+.cart_item{
+  display: flex;
+  flex-flow: row;
+  padding: 0 0 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.cart_item__info{
+  width: 80%;
+}
+
+.cart_item__action{
+  width: 20%;
+}
+
+.cart_item__action button{
+  padding: 5px 15px;
+  float: right;
+}
+
+.cart_item h5{
+  font-weight: 100;
+  margin: 0 auto;
+}
+
+.cart_item h5 span{
+  color: var(--main-green);
+  font-weight: 700;
+}
