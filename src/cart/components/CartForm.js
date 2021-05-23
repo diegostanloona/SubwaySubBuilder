@@ -39,6 +39,7 @@ const CartForm = () => {
   }, false);
 
   const onSubmitHandler = e => {
+    cart.clearCart();
     alert("Aquí entraría la pantalla de pago");
   }
 
